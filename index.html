@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Techbois</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+ <style>
+    body {
+      background: linear-gradient(to bottom, #008080 0%, #00FFFF 100%);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    img {
+      height: 250px;
+      width: 400px;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    h1 {
+      color: white;
+      text-shadow: 1px 1px #333;
+      font-size: 36px;
+    }
+    .login-form {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s;
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      margin-top: 1rem;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      background-color: #008080;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    label {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    i {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #008080;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo-no-background.png" alt="logo">
+    <h1>Welcome to the Techbois Landing Page</h1>
+  </div>
+  <div class="login-form">
+    <label><i class="material-icons">person</i>Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+    <label><i class="material-icons">lock</i>Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    <input type="submit" value="Submit">
+  </div>
+</body>
+</html>
